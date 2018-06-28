@@ -15,6 +15,9 @@ class Allergy
     elsif @score >=32
       allergy_array.push('chocolate')
       @score -= 32
+    elsif @score >=16
+      allergy_array.push('tomatoes')
+      @score -= 16
     end
   end
     allergy_array
