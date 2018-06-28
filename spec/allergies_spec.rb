@@ -15,6 +15,10 @@ describe('#allergies') do
     expect(person.score_checker).to(eq(["pollen"]))
   end
   it('allergy score is 64') do
+    person = Allergy.new(32)
+    expect(person.score_checker).to(eq(["chocolate"]))
+  end
+  it('allergy score is 64') do
     person = Allergy.new(224)
     expect(person.score_checker).to(eq(["cats", "pollen", "chocolate"]))
   end
