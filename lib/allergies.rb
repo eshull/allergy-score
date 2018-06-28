@@ -12,6 +12,9 @@ class Allergy
     elsif @score >=64
       allergy_array.push('pollen')
       @score -= 64
+    elsif @score >=32
+      allergy_array.push('chocolate')
+      @score -= 32
     end
   end
     allergy_array
